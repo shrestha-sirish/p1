@@ -1,0 +1,12 @@
+@mixin flex($jc:space-between,$ai:center,$g:20px)
+{
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+@mixin res{
+    @media(max-width:480px){
+        @content;
+    }
+}

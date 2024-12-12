@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 22px 0;
+
+    .container {
+        @include flex(space-between, center);
+
+        h1 {
+            span {
+                color: $brand;
+            }
+        }
+
+        button {
+            @include res {
+                display: block;
+                border-radius: 4px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            @include flex;
+
+            @include res {
+                display: none;
+            }
+
+            a {
+                color: $brand;
+            }
+        }
+    }
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.container {
+    @include flex(space-between, center);
+    .cc{
+        display: none;
+        @include res{
+            display: block;
+        }
+    }
+    button {
+        display: block;
+@include res{
+    display: none;
+}
+    }
+
+    h1 {
+        span {
+            color: $brand;
+        }
+    }
+
+    ul {
+        list-style: none;
+        @include flex;
+
+        @include res {
+            display: none;
+        }
+
+        a {
+            color: $brand;
+        }
+    }
+}
+
+.about {
+    .container {
+        padding: 130px 0;
+
+        @include res {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            font-size: 54px;
+        }
+
+    }
+}
+
+button {
+    background: $brand;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 4px 5px 4px gray;
+
+}
+.right{
+    display: flex;
+gap: 40px;}
+.counter {
+    background: $brand;
+    color: white;
+    padding: 40px;
+
+    .container {
+        @include flex;
+
+        h3 {
+            font-size: 35px;
+        }
+    }
+}
+p{
+    color: #555555;
+    padding: 20px 0 0 0;
+}
+.dd{
+    color: $brand;
+}
+.banner
+{
+    img{
+        width: 100%;
+    }
+}
+.new {
+    .container {
+        padding: 0px 0 130px 0;
+
+        @include res {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            font-size: 54px;
+        }
+
+    }
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    opacity: 50%;
+}
+.our{
+    text-align: center;
+    padding: 88px 0;
+    h1{
+        font-size: 40px;
+    }
+}
+.lmr{
+    p{
+        padding: 3px;
+    }
+    .si{
+        padding-top: 6px;
+        color: $brand;
+    }
+    .del{
+        color: gray;
+    }
+}
+.review{
+    background: $brand;
+    margin: 60px 0;
+    .rvs{
+        text-align: center;
+        padding: 98px 0 98px 465px;
+        color: white;
+        h1{
+        font-size: 54px;}
+    }
+}
